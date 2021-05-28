@@ -5,16 +5,18 @@
 ⌚ Date : 28/ May/ 2021 
 */
 
+import Footer from "../components/Footer/Footer";
+import OtherFoods from "../components/OtherFoods/OtherFoods";
 
 /*  🔥 React Dependencies 🔥 */
 
-
 const Home = () => {
-    return (
-        <>
-            Hello
-        </>
-    );
+  return (
+    <>
+      <OtherFoods />
+      <Footer />
+    </>
+  );
 };
 
-export default Home
+export default Home;
