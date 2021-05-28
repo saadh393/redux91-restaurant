@@ -5,6 +5,8 @@
 ⌚ Date : 28/ May/ 2021 
 */
 
+import BestBurger from "../components/BestBurger/BestBurger"
+
 
 /*  🔥 React Dependencies 🔥 */
 
@@ -12,7 +14,7 @@
 const Home = () => {
     return (
         <>
-            Hello
+            <BestBurger></BestBurger>
         </>
     );
 };
