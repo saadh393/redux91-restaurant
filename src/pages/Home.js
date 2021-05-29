@@ -7,12 +7,14 @@
 
 import Footer from "../components/Footer/Footer";
 import OtherFoods from "../components/OtherFoods/OtherFoods";
+import Header from "../components/Header/Header";
 
 /*  🔥 React Dependencies 🔥 */
 
 const Home = () => {
   return (
     <>
+      <Header />
       <OtherFoods />
       <Footer />
     </>
