@@ -1,7 +1,8 @@
 header {
   height: 520px;
   width: 80%;
-  margin: 0 auto;
+  margin: 0rem auto;
+  margin-top: 5rem;
 }
 
 header main {

@@ -9,14 +9,18 @@
 import "./Nav.css";
 import logo from "../../images/Logo.png";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Nav = () => {
+  const cart = useSelector((state) => state.cart);
   return (
     <>
       <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid" className="header-nav">
           {/* <a class="navbar-brand" href="#">Navbar</a> */}
-          <img src={logo} alt="" />
+          <Link to="/">
+            <img src={logo} alt="" />
+          </Link>
           <button
             class="navbar-toggler"
             type="button"
@@ -34,7 +38,7 @@ const Nav = () => {
                 Home
               </Link>
               <a class="nav-link" href="#">
-                About
+                Cart ({cart.length})
               </a>
               <Link to="/order" class="nav-link order-button" href="#">
                 Order Now

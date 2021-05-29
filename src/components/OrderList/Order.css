@@ -1,9 +1,11 @@
 .orderlist-wrapper {
   min-height: 400px;
+  margin-top: 6rem;
 }
 
 .orderlist-card {
   width: 80%;
+  height: 400px;
   margin: 2rem auto;
   box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 15%);
   border-radius: 5px;
@@ -15,8 +17,9 @@
   font-weight: 600;
 }
 
-.orderlist-lists {
-  height: 300px;
+.orderlist-total {
+  text-align: right;
+  margin-right: 6%;
 }
 
 /* List Card */
@@ -81,4 +84,10 @@
 .listcard-wrapper .price {
   grid-area: price;
   text-align: center;
+}
+
+.orderlist-card img {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
 }

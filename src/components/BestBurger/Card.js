@@ -1,18 +1,40 @@
 import React from "react";
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { bindActionCreators } from "redux";
+import { isIntoCart } from "../../helper/helper";
+import { actionCreators } from "../../state";
 import styles from "./Card.module.css";
 
-const Card = (props) => {
+const Card = ({ data }) => {
+  const { id, name, price, image } = data;
+  const dispatch = useDispatch();
+  const cart = useSelector((state) => state.cart);
+
+  const { addToCart, removeFromCart } = bindActionCreators(actionCreators, dispatch);
+
   return (
     <div className={styles.card}>
       <div className={styles.body}>
-        <img src={props.img} className={styles.image} />
+        <img src={require("../../images/" + image + ".png").default} className={styles.image} />
         <div className={styles.titleprice}>
-          <h2 className={styles.title}>{props.title}</h2>
-          <h2 className={styles.price}>${props.price}</h2>
+          <h2 className={styles.title}>{name}</h2>
+          <h2 className={styles.price}>${price}</h2>
         </div>
-        <p className={styles.description}>{props.description}</p>
+        <p className={styles.description}>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, quasi.
+        </p>
       </div>
-      <button className={styles.btn}>Buy Now</button>
+
+      {isIntoCart(cart, id) ? (
+        <button className={styles.btn} onClick={() => removeFromCart(id)} style={{ background: "#ff335c" }}>
+          Remove From Cart
+        </button>
+      ) : (
+        <button className={styles.btn} onClick={() => addToCart(data)}>
+          Add To Cart
+        </button>
+      )}
     </div>
   );
 };

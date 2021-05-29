@@ -1,6 +1,21 @@
 nav {
-  width: 80%;
+  width: 100%;
+  position: fixed !important;
+  background-color: rgb(255, 255, 255);
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  scroll-behavior: smooth;
+}
+
+nav .header-nav {
+  width: 80% !important;
   margin: 0 auto;
+}
+
+nav img {
+  width: 40px;
 }
 
 nav .header-nav {

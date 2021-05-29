@@ -2,6 +2,7 @@
 .otherFoodsWrapper {
   padding: 1rem;
   text-align: center;
+  margin-top: 5rem;
 }
 
 .otherFoodsWrapper h4 {
@@ -16,6 +17,16 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 25px;
+}
+
+.priceandtitle {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  align-items: center;
+}
+.priceandtitle h2 {
+  margin: 0;
 }
 
 /* Card of Other Foods */

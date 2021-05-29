@@ -6,17 +6,36 @@
 */
 
 /*  🔥 React Dependencies 🔥 */
+import { useDispatch, useSelector } from "react-redux";
+import { bindActionCreators } from "redux";
+import { isIntoCart } from "../../helper/helper";
+import { actionCreators } from "../../state";
 import style from "./OtherFood.module.css";
-import image from "../../images/product4.png";
 
-const CardOtherFood = () => {
+const CardOtherFood = ({ data }) => {
+  const { id, name, price, image } = data;
+
+  const dispatch = useDispatch();
+  const cart = useSelector((state) => state.cart);
+  const { addToCart, removeFromCart } = bindActionCreators(actionCreators, dispatch);
+
+  console.log(cart);
   return (
     <>
       <div className={style.card}>
-        <img src={image} />
-        <h3>Hafudog</h3>
+        <img src={require("../../images/" + image + ".png").default} />
+        <div className={style.priceandtitle}>
+          <h3>{name}</h3>
+          <h2>${price}</h2>
+        </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae </p>
-        <button>Order Now</button>
+        {isIntoCart(cart, id) ? (
+          <button onClick={() => removeFromCart(id)} style={{ background: "#ff335c" }}>
+            Remove From Cart
+          </button>
+        ) : (
+          <button onClick={() => addToCart(data)}>Add To Cart</button>
+        )}
       </div>
     </>
   );

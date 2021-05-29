@@ -7,30 +7,37 @@
 
 /*  🔥 React Dependencies 🔥 */
 import { useState } from "react";
-import image from "../../images/product5.png";
+import { useDispatch } from "react-redux";
+import { bindActionCreators } from "redux";
+import { useSelector } from "react-redux";
+import { actionCreators } from "../../state";
 
-const ListCard = () => {
-  const [quantity, setQuantity] = useState(1);
+const ListCard = ({ data }) => {
+  const { name, image, id, price, quantity } = data;
+  const cart = useSelector((state) => state.cart);
+  const dispatch = useDispatch();
+
+  const { addQuantity, removeQuantity } = bindActionCreators(actionCreators, dispatch);
   return (
     <>
       <div className="listcard-wrapper">
         <div className="imageAndName">
-          <img src={image} />
-          <h4>Burger Name</h4>
+          <img src={require("../../images/" + image + ".png").default} />
+          <h4>{name}</h4>
         </div>
 
         <div className="calculation justifyEnd">
-          <button className="blue" onClick={() => setQuantity(quantity + 1)}>
+          <button className="blue" onClick={() => addQuantity(id)}>
             +
           </button>
           <input type="number" value={quantity} />
-          <button className="red" onClick={() => quantity > 0 && setQuantity(quantity - 1)}>
+          <button className="red" onClick={() => removeQuantity(id)}>
             -
           </button>
         </div>
 
         <div className="price">
-          <h4>$50</h4>
+          <h4>${price * quantity}</h4>
         </div>
       </div>
     </>
