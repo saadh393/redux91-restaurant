@@ -1,5 +1,6 @@
 import React from 'react';
 import image from '../../images/1.png'
+import logo from '../../images/Logo.png'
 
 const Header = () => {
     return (
@@ -13,7 +14,8 @@ const Header = () => {
         }}>
             <nav class="navbar navbar-expand-lg navbar-light ">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Navbar</a>
+                    {/* <a class="navbar-brand" href="#">Navbar</a> */}
+                    <img src={logo} alt="" />
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -45,12 +47,12 @@ const Header = () => {
                                 lineHeight: '26px',
                                 /* identical to box height, or 144% */
 
-                                textAlign: 'justify',
-                                letterSpacing: '0.02em',
+                                // textAlign: 'justify',
+                                // letterSpacing: '0.02em',
 
-                                color: '#FFFFFF',
-                                backgroundColor: '#17B16D',
-                                borderRadius: '20px'
+                                // color: '#FFFFFF',
+                                // backgroundColor: '#17B16D',
+                                // borderRadius: '20px'
 
                             }} class="nav-link" href="#">Order Now</a>
                         </div>
