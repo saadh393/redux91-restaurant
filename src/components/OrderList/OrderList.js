@@ -37,7 +37,7 @@ const OrderList = () => {
               </div>
             </div>
           ) : (
-            <img src={emptyImage} />
+            <img src={emptyImage} className='emptyImage'/>
           )}
         </div>
       </section>
