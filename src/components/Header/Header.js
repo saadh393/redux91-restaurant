@@ -1,6 +1,7 @@
 import React from 'react';
 import image from '../../images/1.png'
 import logo from '../../images/Logo.png'
+import "./Header.css"
 
 const Header = () => {
     return (
@@ -35,24 +36,23 @@ const Header = () => {
                                 marginTop: '53px'
 
                             }} class="nav-link" href="#">About</a>
-                            <a style={{
+                            <a className="now" style={{
                                 height: '26px',
                                 width: '99px',
                                 // left: '1068px',
-                                marginTop: '53px',
+                                // marginTop: '53px',
                                 fontFamily: 'Poppins',
                                 fontStyle: 'normal',
                                 fontWeight: '500',
                                 fontSize: '18px',
-                                lineHeight: '26px',
-                                /* identical to box height, or 144% */
+                                // lineHeight: '26px',
+                                // identical to box height, or 144% 
 
-                                // textAlign: 'justify',
+                                textAlign: 'center',
                                 // letterSpacing: '0.02em',
 
-                                // color: '#FFFFFF',
-                                // backgroundColor: '#17B16D',
-                                // borderRadius: '20px'
+                                color: '#FFFFFF',
+
 
                             }} class="nav-link" href="#">Order Now</a>
                         </div>
