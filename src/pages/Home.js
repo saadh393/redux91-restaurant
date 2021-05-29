@@ -5,6 +5,8 @@
 ⌚ Date : 28/ May/ 2021 
 */
 
+import Header from "../components/Header/Header"
+
 
 /*  🔥 React Dependencies 🔥 */
 
@@ -12,7 +14,7 @@
 const Home = () => {
     return (
         <>
-            Hello
+            <Header />
         </>
     );
 };
