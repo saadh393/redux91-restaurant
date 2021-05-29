@@ -1,14 +1,13 @@
-import React from 'react';
-import Card from './Card';
-import styles from './BestBurger.module.css';
-import product1 from '../../images/product1.png';
-import product2 from '../../images/product2.png';
-import product3 from '../../images/product3.png';
-
+import React from "react";
+import Card from "./Card";
+import styles from "./BestBurger.module.css";
+import product1 from "../../images/product1.png";
+import product2 from "../../images/product2.png";
+import product3 from "../../images/product3.png";
 
 const BestBurger = () => {
-    return (
-        <div className={styles.wrapper}>
+  return (
+    <div className={styles.wrapper}>
       <Card
         img={product1}
         title="Burger1"
@@ -30,7 +29,7 @@ const BestBurger = () => {
         description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, quasi."
       />
     </div>
-    );
+  );
 };
 
 export default BestBurger;

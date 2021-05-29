@@ -6,6 +6,7 @@
 */
 
 import BestBurger from "../components/BestBurger/BestBurger"
+import Contacts from "../components/Contacts/Contacts"
 
 
 /*  🔥 React Dependencies 🔥 */
@@ -15,6 +16,7 @@ const Home = () => {
     return (
         <>
             <BestBurger></BestBurger>
+            <Contacts></Contacts>
         </>
     );
 };
