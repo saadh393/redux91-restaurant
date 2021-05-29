@@ -1,0 +1,36 @@
+nav {
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav .header-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav .header-nav .order-button {
+  background-color: var(--primary);
+  color: #fff !important;
+  border-radius: 25px;
+}
+
+nav .header-nav #navbarNavAltMarkup {
+  justify-content: flex-end;
+  padding-right: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  nav .header-nav {
+    display: block;
+  }
+
+  nav .navbar-toggler {
+    position: absolute;
+    right: 0;
+    top: 20px;
+  }
+  nav .navbar-nav {
+    text-align: center;
+  }
+}

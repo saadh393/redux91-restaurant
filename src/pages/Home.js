@@ -9,6 +9,7 @@ import Footer from "../components/Footer/Footer";
 import OtherFoods from "../components/OtherFoods/OtherFoods";
 import Header from "../components/Header/Header";
 import BestBurger from "../components/BestBurger/BestBurger";
+import AboutUs from "../components/AboutUs/AboutUs";
 
 /*  🔥 React Dependencies 🔥 */
 
@@ -16,9 +17,9 @@ const Home = () => {
   return (
     <>
       <Header />
+      <AboutUs />
       <BestBurger />
       <OtherFoods />
-      <Footer />
     </>
   );
 };

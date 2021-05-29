@@ -1,0 +1,72 @@
+.aboutWrapper {
+  display: flex;
+  margin: 3rem 0;
+  height: 450px;
+  /* border: 1px solid gray; */
+}
+
+.aboutWrapper div {
+  width: 50%;
+}
+
+.aboutWrapper .right {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.aboutWrapper .right h4 {
+  color: var(--primary);
+}
+.aboutWrapper .right h2 {
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.aboutWrapper .right p {
+  width: 85%;
+  color: #434343;
+}
+
+.aboutWrapper .right button {
+  width: fit-content;
+  outline: none;
+  border: none;
+  padding: 0.8rem 1.3rem;
+  background-color: var(--primary);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 2px;
+  box-shadow: 1px 3px 8px 3px rgba(0, 0, 0, 10%);
+}
+
+.aboutWrapper .left {
+  background-image: url("../../images/foods.png");
+  background-repeat: no-repeat;
+  background-position: 10%;
+  background-size: 90%;
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutWrapper {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .aboutWrapper div {
+    width: 100%;
+  }
+
+  .aboutWrapper .left {
+    height: 320px;
+  }
+  .aboutWrapper .right {
+    align-items: center;
+    padding: 0.7rem;
+  }
+  .aboutWrapper .right p {
+    text-align: center;
+  }
+}

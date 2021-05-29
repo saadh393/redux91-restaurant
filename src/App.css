@@ -13,3 +13,19 @@
   color: var(--secondary);
   box-sizing: border-box;
 }
+
+button {
+  width: fit-content;
+  outline: none;
+  border: none;
+  padding: 0.8rem 1.3rem;
+  background-color: var(--primary);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 2px;
+  box-shadow: 1px 3px 8px 3px rgba(0, 0, 0, 10%);
+}
+
+.justifyEnd {
+  justify-content: flex-end;
+}

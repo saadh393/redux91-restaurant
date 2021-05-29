@@ -1,48 +1,54 @@
 .card {
-    overflow: hidden;
-    box-shadow: 0 2px 20px rgba(0,0,0,.1);
-    border-radius: 0.8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-    transition: transform 200ms ease-in;
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 0.8rem;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 200ms ease-in;
 }
 
 .image {
-    height: 12rem;
-    width: 100%;
-    border-radius: 0.8rem;
-    object-fit: cover;
+  height: 12rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
 }
 
 .titleprice {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.8rem;
 }
 
 .title {
-    padding: 0.8rem;
+  padding: 0.8rem;
+  font-size: 1.6rem;
+  color: var(--primary);
+  font-weight: 600;
 }
 
 .price {
-    padding: 0.8rem;
+  padding: 0.8rem;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .description {
-    padding: 0 0.8rem;
+  padding: 0 0.8rem;
 }
 
 .btn {
-    padding: 1rem;
-    font-size: 1rem;
-    background-color: #17B16D;
-    color: white;
-    border: 1px solid white;
-    border-radius: 50px;
-    margin: 5px;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  background-color: #17b16d;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50px;
+  margin: 5px;
 }
 
 .card:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }

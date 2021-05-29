@@ -1,6 +1,17 @@
+.bestBurger {
+  text-align: center;
+  margin: 2rem;
+}
+
+.sectionTitle {
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
 .wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
-    gap: 2rem;
-    justify-content: center;
-  }
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
