@@ -9,9 +9,10 @@
 import style from "./AboutUs.module.css";
 
 const AboutUs = () => {
+
   return (
     <>
-      <section className={style.aboutWrapper}>
+      <section data-testid="AboutUs-1" className={style.aboutWrapper}>
         <div className={style.left}></div>
         <div className={style.right}>
           <h4>WELCOME</h4>
