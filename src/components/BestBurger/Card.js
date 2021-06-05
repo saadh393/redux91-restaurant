@@ -16,13 +16,14 @@ const Card = ({ data }) => {
   return (
     <div className={styles.card}>
       <div className={styles.body}>
-        <img src={require("../../images/" + image + ".png").default} className={styles.image} />
+        <img src={require("../../images/" + image + ".png").default} className={styles.image} alt="" />
         <div className={styles.titleprice}>
           <h2 className={styles.title}>{name}</h2>
           <h2 className={styles.price}>${price}</h2>
         </div>
         <p className={styles.description}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, quasi.
+          Lorem sit ipsum dolor sit amet consectetur, door adipisicing amet consectetur amet elit. Molestias, quasi.
+          consectetur, adipisicing.
         </p>
       </div>
 

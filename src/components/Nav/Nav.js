@@ -17,7 +17,6 @@ const Nav = () => {
     <>
       <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid" className="header-nav">
-          {/* <a class="navbar-brand" href="#">Navbar</a> */}
           <Link to="/">
             <img src={logo} alt="" />
           </Link>
@@ -33,12 +32,12 @@ const Nav = () => {
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+            <div class="navbar-nav" style={{ gap: "25px" }}>
               <Link to="/" class="nav-link active" aria-current="page" href="#">
                 Home
               </Link>
               <a class="nav-link" href="#">
-                Cart ({cart.length})
+                Cart {cart.length > 0 && <span className="cart">{cart.length}</span>}
               </a>
               <Link to="/order" class="nav-link order-button" href="#">
                 Order Now

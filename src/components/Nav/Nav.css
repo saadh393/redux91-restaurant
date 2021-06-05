@@ -9,30 +9,35 @@ nav {
   scroll-behavior: smooth;
 }
 
-nav .header-nav {
-  width: 80% !important;
-  margin: 0 auto;
-}
-
 nav img {
   width: 40px;
 }
 
 nav .header-nav {
+  width: 80% !important;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  gap: 24px !important;
   width: 100%;
 }
 
 nav .header-nav .order-button {
   background-color: var(--primary);
   color: #fff !important;
-  border-radius: 25px;
+  border-radius: 6px;
 }
 
 nav .header-nav #navbarNavAltMarkup {
   justify-content: flex-end;
   padding-right: 50px;
+}
+
+nav .cart {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 0.2rem 0.6rem;
+  border-radius: 50px;
 }
 
 @media only screen and (max-width: 600px) {

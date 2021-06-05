@@ -16,25 +16,27 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 25px;
+  gap: 40px;
 }
 
 .priceandtitle {
   display: flex;
   justify-content: space-between;
-  padding: 0 15px;
+  padding: 10px 20px;
   align-items: center;
 }
 .priceandtitle h2 {
   margin: 0;
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 
 /* Card of Other Foods */
 
 .card {
-  width: 350px;
+  width: 320px;
   height: fit-content;
-  box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 8%);
+  box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 5%);
   border-radius: 6px;
   position: relative;
 }
@@ -50,17 +52,18 @@
 .card h3 {
   margin-top: 1rem;
   color: var(--primary);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.4rem;
-  letter-spacing: 1.1px;
 }
 
 .card p {
-  width: 80%;
-  text-align: center;
-  margin: 0.4rem auto;
-  color: var(--lightText);
+  /* width: 80%; */
+  text-align: justify;
+  margin: 0rem auto;
+  color: var(--secondary);
   padding-bottom: 3rem;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .card button {

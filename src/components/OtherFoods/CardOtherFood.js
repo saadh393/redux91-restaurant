@@ -23,12 +23,12 @@ const CardOtherFood = ({ data }) => {
   return (
     <>
       <div className={style.card}>
-        <img src={require("../../images/" + image + ".png").default} />
+        <img alt="" src={require("../../images/" + image + ".png").default} />
         <div className={style.priceandtitle}>
           <h3>{name}</h3>
           <h2>${price}</h2>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae </p>
+        <p>Lorem ipsum dolor consectetur sit amet consectetur adipisicing elit. Maxime mollitia, molestiae </p>
         {isIntoCart(cart, id) ? (
           <button onClick={() => removeFromCart(id)} style={{ background: "#ff335c" }}>
             Remove From Cart
